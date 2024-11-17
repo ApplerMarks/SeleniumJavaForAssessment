@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Contact us Page" verbose="1" >
+    <test name="Contact us test cases" >
+    	<classes>
+            <class name="TestRunner.ContactUsPageRunner" />
+        </classes>
+    </test>
+</suite>
