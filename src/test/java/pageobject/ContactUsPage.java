@@ -125,17 +125,4 @@ public class ContactUsPage extends Browser {
 		}
 		return null;
 	}
-	
-	public void VerifyCityOfficeDetailsPresent(String city) {
-		Element officeAddress = new Element(city + " city office address", By.xpath(" //div[normalize-space(text()) = '" + city + "']/following-sibling::div//p[contains(@class,'cmp-location__location__address')]"));
-		Element officeDirection = new Element(city + " city office direction", By.xpath(" //div[normalize-space(text()) = '" + city + "']/following-sibling::div//p[contains(@class,'cmp-location__location__direction')]"));
-		Element officePhoneNumber = new Element(city + " city office phone number", By.xpath(" //div[normalize-space(text()) = '" + city + "']/following-sibling::div//p[contains(@class,'cmp-location__location__phone')]"));
-		Element officeEmailAddress = new Element(city + " city office email address", By.xpath(" //div[normalize-space(text()) = '" + city + "']/following-sibling::div//p[contains(@class,'cmp-location__location__email')]"));
-		
-		if(officeAddress.IsElementDisplayed()) {
-			officeAddress.GetText();
-		}
-		
-	
-	}
 }
